@@ -4,3 +4,24 @@
   padding: 0;
 }
 
+:root {
+  --cream-main-bkgd: #faf7f2;
+  --nav-color: #ffffff;
+  --ink: #1c1a17;
+  --ink-light: #4a4540;
+  --border: #e0d9cf;
+  --accent: #2e6faf;
+  --accent-light: #eaf2fc;
+  --muted: #7a7167;
+  --nav-height: 68px;
+}
+
+body {
+    background-color: var(--cream-main-bkgd);
+}
+
+nav {
+    background-color: var(--nav-color);
+    width: 100%;
+    height: var(--nav-height);
+}
