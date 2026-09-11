@@ -1,26 +1,27 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
-  --cream-main-bkgd: #faf7f2;
-  --nav-color: #ffffff;
-  --ink: #1c1a17;
-  --ink-light: #4a4540;
-  --border: #e0d9cf;
-  --accent: #2e6faf;
-  --accent-light: #eaf2fc;
-  --muted: #7a7167;
-  --nav-height: 68px;
+    --cream-main-bkgd: #faf7f2;
+    --nav-color: #ffffff;
+    --ink: #1c1a17;
+    --ink-light: #4a4540;
+    --border: #e0d9cf;
+    --accent: #2e6faf;
+    --accent-light: #eaf2fc;
+    --muted: #7a7167;
+    --nav-height: 68px;
 }
 
 
 body {
     background-color: var(--cream-main-bkgd);
     font-family: 'Source Sans 3', system-ui, sans-serif;
-    
 }
 
 /* ------------Nav Bar--------------  */
@@ -30,7 +31,7 @@ nav {
     height: var(--nav-height);
 }
 
-.inner-nav{
+.inner-nav {
     border: 1px dotted blue;
     max-width: 1100px;
     width: 100%;
@@ -43,14 +44,15 @@ nav {
 }
 
 .nav-logo {
-  font-family: 'Lora', Georgia, serif;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--ink);
-  text-decoration: none;
-  letter-spacing: -0.01em;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: -0.01em;
 }
-.nav-links{
+
+.nav-links {
     display: flex;
     list-style-type: none;
     gap: 20px;
@@ -66,7 +68,8 @@ nav {
 
 .nav-links a:hover {
     color: var(--accent);
-    transition: 0.3s; /* For a smooth fade */
+    transition: 0.3s;
+    /* For a smooth fade */
     background-color: var(--accent-light);
     padding: 5px 10px;
     border-radius: 4px;
@@ -78,6 +81,7 @@ nav {
     border-radius: 4px;
     color: var(--accent) !important;
 }
+
 /* -----------------End of Nav Bar----------------- */
 
 
@@ -86,12 +90,13 @@ nav {
     display: block;
     width: 30px;
     height: 4px;
-    background-color:var(--ink);
-    margin: 4px 0px; /* space them out */
+    background-color: var(--ink);
+    margin: 4px 0px;
+    /* space them out */
 }
 
 .menu-toggle {
-    flex-direction:  column;
+    flex-direction: column;
     background: none;
     border: none;
     cursor: pointer;
@@ -101,24 +106,49 @@ nav {
 
 /* This is to make the links dissappear if the window
 is changed to a small size */
-@media (max-width: 768px){
-    .menu-toggle{
+@media (max-width: 768px) {
+    .menu-toggle {
         display: block;
     }
+
     .nav-links {
         display: none;
         position: absolute;
         top: var(--nav-height);
-        right:0;
+        right: 0;
         width: 200px;
         background-color: var(--nav-color);
         padding: 20px 0;
-       }
+    }
 
     .nav-links.open {
         display: flex;
         flex-direction: column;
     }
 }
-/* End of Hambuger Menu */
 
+/* --------------End of Hambuger Menu------------- */
+
+
+/* --------------Start of Hero Section-----------  */
+
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1545173168-9f1947eebb7f? w=800&h=600&fit=crop'); background-size:)
+    background-size: cover; 
+    background-position: center;
+    height: 80vh;
+            /* 80% of the screen height*/
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: white;
+    text-align: center;
+    }
+
+    .home-grid {
+        max-width: 1100px;
+        width: 100%;
+        height: 100%;
+        border: 2px dotted purple;
+    }
