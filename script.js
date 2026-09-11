@@ -1,3 +1,3 @@
-const menuBtn = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-menuBtn.addEventListener('click', () =>{ navLinks.classList.toggle('open')})
+const burger = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.nav-links');
+burger.addEventListener('click', () =>{ menu.classList.toggle('open')})

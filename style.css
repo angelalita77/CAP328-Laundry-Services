@@ -56,21 +56,6 @@ nav {
     gap: 20px;
 }
 
-/* This is to make the links dissappear if the window
-is changed to a small size */
-@media (max-width: 768px){
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: var(--nav-height);
-        right:0;
-        width: 200px;
-        background-color: var(--nav-color);
-    }
-    .menu-toggle {
-        display: flex;
-    }
-}
 
 .nav-links a {
     text-decoration: none;
@@ -99,10 +84,10 @@ is changed to a small size */
 /* --------------Hambuger Menu-------------------- */
 .bar {
     display: block;
-    width: 25px;
-    height: 2px;
+    width: 30px;
+    height: 4px;
     background-color:var(--ink);
-    margin:5px 0; /* space them out */
+    margin: 4px 0px; /* space them out */
 }
 
 .menu-toggle {
@@ -112,3 +97,21 @@ is changed to a small size */
     cursor: pointer;
     padding: 0;
 }
+
+/* This is to make the links dissappear if the window
+is changed to a small size */
+@media (max-width: 768px){
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: var(--nav-height);
+        right:0;
+        width: 200px;
+        background-color: var(--nav-color);
+    }
+    .nav-links.open {
+        display: flex;
+    }
+}
+/* End of Hambuger Menu */
+
