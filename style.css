@@ -96,11 +96,15 @@ nav {
     border: none;
     cursor: pointer;
     padding: 0;
+    display: none;
 }
 
 /* This is to make the links dissappear if the window
 is changed to a small size */
 @media (max-width: 768px){
+    .menu-toggle{
+        display: block;
+    }
     .nav-links {
         display: none;
         position: absolute;
@@ -108,9 +112,12 @@ is changed to a small size */
         right:0;
         width: 200px;
         background-color: var(--nav-color);
-    }
+        padding: 20px 0;
+       }
+
     .nav-links.open {
         display: flex;
+        flex-direction: column;
     }
 }
 /* End of Hambuger Menu */
