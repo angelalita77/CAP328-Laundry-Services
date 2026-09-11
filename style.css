@@ -53,13 +53,23 @@ nav {
 .nav-links{
     display: flex;
     list-style-type: none;
-    gap: 30px;
+    gap: 20px;
+}
+
+@media (max-width: 768px){
+    .nav-links {
+        display: none;
+    }
+    .menu-toggle {
+        display: flex;
+    }
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--ink)
-    
+    color: var(--ink);
+    padding: 5px 10px;
+
 }
 
 .nav-links a:hover {
