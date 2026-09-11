@@ -12,8 +12,10 @@
     --ink: #1c1a17;
     --ink-light: #4a4540;
     --border: #e0d9cf;
-    --accent: #2e6faf;
+    --accent: #3581ce;
     --accent-light: #eaf2fc;
+    --btn-color: #3581cf;
+    --btn-color-hover: #29659e;
     --muted: #7a7167;
     --nav-height: 68px;
 }
@@ -147,6 +149,10 @@ width: 100%;
     border: 2px dotted rgb(219, 157, 14);
 }
 
+.hero-text p {
+    margin-bottom: 25px;;
+}
+
 .hero-image {
     flex: 1;
 
@@ -157,6 +163,40 @@ width: 100%;
     height: auto;
     border-radius: 8px;
 }
+
+.hero-btns {
+    display:flex;
+    gap: 20px;
+}
+
+.btn {  /* <--------------shape of the buttons in entire site */
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px black;
+    border-radius: 6px;
+    padding: 12px 24px;
+
+}
+
+.btn-filled {
+    background-color: var(--btn-color);
+    color: white;
+}
+
+.btn-empty {
+    color: var(--ink-light);
+    border: var(--border) solid 2px;
+}
+
+.btn-filled:hover{
+    background-color: var(--btn-color-hover);
+}
+
+.btn-empty:hover{
+    color: var(--btn-color);
+    border-color: var(--btn-color);
+}
+
 
 
 
