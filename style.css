@@ -53,16 +53,27 @@ nav {
 .nav-links{
     display: flex;
     list-style-type: none;
-    gap: 20px;
+    gap: 30px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--ink)
+    
 }
 
 .nav-links a:hover {
     color: var(--accent);
     transition: 0.3s; /* For a smooth fade */
+    background-color: var(--accent-light);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.active {
+    background-color: var(--accent-light);
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: var(--accent) !important;
 }
 
