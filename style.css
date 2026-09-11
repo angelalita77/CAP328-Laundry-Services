@@ -56,6 +56,8 @@ nav {
     gap: 20px;
 }
 
+/* This is to make the links dissappear if the window
+is changed to a small size */
 @media (max-width: 768px){
     .nav-links {
         display: none;
@@ -87,3 +89,18 @@ nav {
     color: var(--accent) !important;
 }
 
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color:var(--ink);
+    margin:2px 0; /* space them out */
+}
+
+.menu-toggle {
+    display:none;
+    flex-direction:  column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
