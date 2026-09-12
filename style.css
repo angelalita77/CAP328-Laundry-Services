@@ -178,12 +178,15 @@ is changed to a small size */
 main {
 max-width: 1100px;
 width: 100%;
+height: 90vh;
 }
 
 .hero {
     display:flex;
     border: 2px dotted purple;
     width: 100%;
+    gap: 15px;
+    margin: 40px 0;
 }
 .hero-text{
     flex: 1;
@@ -231,6 +234,19 @@ width: 100%;
 .icon{
     padding: 5px 0px;
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 5vh;
+    color: white;
+    width: 100%;
+    gap: 30px;
+    padding: 10px 10px;
+}
+
 
 
 

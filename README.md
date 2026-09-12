@@ -41,7 +41,7 @@ A web application built using HTML5, CSS3, JavaScript (ES6+), and modern CSS fra
 
 | Completed | Requirement Description | Weight |
 | :---: | :--- | :---: |
-| [ ] | Demonstrate proper usage of ES6 syntax and tools. | **10%** |
+| [x] | Demonstrate proper usage of ES6 syntax and tools. | **10%** |
 | [ ] | Use functions to adhere to the DRY principle. | **7%** |
 | [ ] | Use sound programming logic throughout the application. | **7%** |
 | [ ] | Use appropriate exception handling, as necessary. | **1%** |
