@@ -34,6 +34,9 @@ h1 {
     font-family: "Lexend", sans-serif;
     font-size: 3em;
 }
+h3 {
+    margin-bottom: 10px;
+}
 
 /* -----------------Button Styles----------------- */
 /* These button styles will be used throughout the site  */
@@ -183,14 +186,14 @@ height: 90vh;
 
 .hero {
     display:flex;
-    border: 2px dotted purple;
+    /* border: 2px dotted purple; */
     width: 100%;
     gap: 15px;
     margin: 40px 0;
 }
 .hero-text{
     flex: 1;
-    border: 2px dotted rgb(219, 157, 14);
+    /* border: 2px dotted rgb(219, 157, 14); */
 }
 
 .hero-text p {
@@ -214,7 +217,7 @@ height: 90vh;
 }
 
 .home-grid {
-    border: 2px dotted green;
+    /* border: 2px dotted green; */
     display:flex;
     gap: 30px;
     padding: 10px 0px;
