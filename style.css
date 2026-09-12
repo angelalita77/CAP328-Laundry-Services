@@ -24,7 +24,48 @@
 body {
     background-color: var(--cream-main-bkgd);
     font-family: 'Source Sans 3', system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+h1 {
+    font-family: "Lexend", sans-serif;
+    font-size: 3em;
+}
+
+/* -----------------Button Styles----------------- */
+/* These button styles will be used throughout the site  */
+.btn {  /* <--------------shape of the buttons */
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px black;
+    border-radius: 6px;
+    padding: 12px 24px;
+
+}
+
+.btn-filled {
+    background-color: var(--btn-color);
+    color: white;
+}
+
+.btn-empty {
+    color: var(--ink-light);
+    border: var(--border) solid 2px;
+}
+
+.btn-filled:hover{
+    background-color: var(--btn-color-hover);
+}
+
+.btn-empty:hover{
+    color: var(--btn-color);
+    border-color: var(--btn-color);
+}
+/* -----------End of Button Style ----------- */
+
 
 /* ------------Nav Bar--------------  */
 nav {
@@ -150,7 +191,7 @@ width: 100%;
 }
 
 .hero-text p {
-    margin-bottom: 25px;;
+    margin-bottom: 25px;
 }
 
 .hero-image {
@@ -169,33 +210,31 @@ width: 100%;
     gap: 20px;
 }
 
-.btn {  /* <--------------shape of the buttons in entire site */
-    text-decoration: none;
-    font-weight: bold;
-    border: 2px black;
-    border-radius: 6px;
-    padding: 12px 24px;
-
+.home-grid {
+    border: 2px dotted green;
+    display:flex;
+    gap: 30px;
+    padding: 10px 0px;
+ 
 }
 
-.btn-filled {
-    background-color: var(--btn-color);
-    color: white;
+.home-card {
+    flex: 1;
+    /* width: 300px; */
+    height: 150px;
+    border: var(--border) 2px solid;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.btn-empty {
-    color: var(--ink-light);
-    border: var(--border) solid 2px;
+.icon{
+    padding: 5px 0px;
 }
 
-.btn-filled:hover{
-    background-color: var(--btn-color-hover);
-}
 
-.btn-empty:hover{
-    color: var(--btn-color);
-    border-color: var(--btn-color);
-}
+
+
 
 
 
